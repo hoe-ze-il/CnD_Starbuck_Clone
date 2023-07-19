@@ -6,9 +6,11 @@ import back from "./icons/back.png"
 import './NavigationBar.scss';
 
 function NavigationBar({ handleNoScroll }) {
+    // State to control if the navigation/mobile menu is open
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    // Function to scroll to the top of the page
     function scrollToTop() {
         window.scrollTo({
             top: 0,
@@ -16,16 +18,19 @@ function NavigationBar({ handleNoScroll }) {
         });
     }
 
+    // Scroll to the top of the page when the nav-bar is clicked
     useEffect(() => {
         const navbar = document.querySelector('.navigation-bar');
         navbar.addEventListener("click", scrollToTop);
     }, [isNavOpen])
 
+    // toggling hamburger menu OPEN/Close
     const toggleNav = () => {
         setIsNavOpen(!isNavOpen);
 
     };
 
+    // Close navigation bar when the screen exceeds 768px
     const checkWindowSize = () => {
         if (window.innerWidth >= 768) {
             setIsNavOpen(false);
@@ -39,10 +44,13 @@ function NavigationBar({ handleNoScroll }) {
         };
     }, []);
 
+    // to call "handleNoScroll" which is a callback function passed from parents components
+    // if the navigation is opened, users cannot scroll the content of the page
     useEffect(() => {
         handleNoScroll(isNavOpen);
     }, [isNavOpen, handleNoScroll]);
 
+    // to close navigation bar when users click on the area other than menu-btn/menu/products/navbar
     const hideNavOnClickOutside = (event) => {
         const navbar = document.querySelector('.navigation-bar');
         const btn = document.getElementById('menu-btn')
@@ -66,10 +74,12 @@ function NavigationBar({ handleNoScroll }) {
         };
     }, []);
 
+    // to handle click on the "Menu" button
     const handleMenuClick = () => {
         setIsMenuOpen(!isMenuOpen)
     }
 
+    // to return back to the menu when clicked
     const returnToMenu = () => {
         setIsMenuOpen(!isMenuOpen)
     }
