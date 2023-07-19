@@ -1,0 +1,22 @@
+.sidebar {
+
+    p {
+        font-size: 19px;
+        font-weight: 600;
+        margin-bottom: 0;
+        padding: 16px 0 8px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        a {
+            padding: 8px 0;
+            display: block;
+            text-decoration: none;
+            font-weight: 600;
+            color: rgba(0, 0, 0, .5);
+        }
+    }
+}

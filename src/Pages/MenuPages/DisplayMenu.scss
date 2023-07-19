@@ -1,0 +1,31 @@
+.sub-categories {
+    grid-column: span 4;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+    img {
+        border-radius: 50%;
+        width: 112px;
+    }
+
+    p {
+        font-size: 19px;
+        padding-left: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sub-categories {
+        img {
+            width: 72px;
+            height: 72px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
