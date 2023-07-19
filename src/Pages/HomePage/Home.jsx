@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import NavigationBar from "../../Components/Navigation/NavigationBar"
+import Footer from "../../Components/Footer/Footer";
 
 function Home() {
     // to control whether scrolling is disabled (when mobile menu is opened)
@@ -20,6 +21,7 @@ function Home() {
     return (
         <>
             <NavigationBar handleNoScroll={handleNoScroll} />
+            <Footer />
         </>
     )
 }
