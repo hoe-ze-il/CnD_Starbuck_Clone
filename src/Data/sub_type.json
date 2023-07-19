@@ -1,0 +1,422 @@
+[
+    {
+        "id": 1,
+        "sub_category": "Cold Coffees",
+        "sub_category_id": 6,
+        "type": "Cold Brews"
+    },
+    {
+        "id": 2,
+        "sub_category": "Cold Coffees",
+        "sub_category_id": 6,
+        "type": "Nitro Cold Brews"
+    },
+    {
+        "id": 3,
+        "sub_category": "Cold Coffees",
+        "sub_category_id": 6,
+        "type": "Iced Americano"
+    },
+    {
+        "id": 4,
+        "sub_category": "Cold Coffees",
+        "sub_category_id": 6,
+        "type": "Iced Coffees"
+    },
+    {
+        "id": 5,
+        "sub_category": "Cold Coffees",
+        "sub_category_id": 6,
+        "type": "Iced Shaken Espresso"
+    },
+    {
+        "id": 6,
+        "sub_category": "Cold Coffees",
+        "sub_category_id": 6,
+        "type": "Iced Flat Whites"
+    },
+    {
+        "id": 7,
+        "sub_category": "Cold Coffees",
+        "sub_category_id": 6,
+        "type": "Iced Lattes"
+    },
+    {
+        "id": 8,
+        "sub_category": "Cold Coffees",
+        "sub_category_id": 6,
+        "type": "Iced Macchiatos"
+    },
+    {
+        "id": 9,
+        "sub_category": "Cold Coffees",
+        "sub_category_id": 6,
+        "type": "Iced Mochas"
+    },
+    {
+        "id": 10,
+        "sub_category": "Oleato™",
+        "sub_category_id": 15,
+        "type": "Oleato"
+    },
+    {
+        "id": 11,
+        "sub_category": "Hot Coffees",
+        "sub_category_id": 16,
+        "type": "Hot Americanos"
+    },
+    {
+        "id": 12,
+        "sub_category": "Hot Coffees",
+        "sub_category_id": 16,
+        "type": "Hot Brewed Coffees"
+    },
+    {
+        "id": 13,
+        "sub_category": "Hot Coffees",
+        "sub_category_id": 16,
+        "type": "Hot Cappuccinos"
+    },
+    {
+        "id": 14,
+        "sub_category": "Hot Coffees",
+        "sub_category_id": 16,
+        "type": "Hot Espresso Shots"
+    },
+    {
+        "id": 15,
+        "sub_category": "Hot Coffees",
+        "sub_category_id": 16,
+        "type": "Hot Flat Whites"
+    },
+    {
+        "id": 16,
+        "sub_category": "Hot Coffees",
+        "sub_category_id": 16,
+        "type": "Hot Lattes"
+    },
+    {
+        "id": 17,
+        "sub_category": "Hot Coffees",
+        "sub_category_id": 16,
+        "type": "Hot Macchiato"
+    },
+    {
+        "id": 18,
+        "sub_category": "Hot Coffees",
+        "sub_category_id": 16,
+        "type": "Hot Mochas"
+    },
+    {
+        "id": 19,
+        "sub_category": "Hot Coffees",
+        "sub_category_id": 16,
+        "type": "Coffee Travelers"
+    },
+    {
+        "id": 20,
+        "sub_category": "Hot Teas",
+        "sub_category_id": 8,
+        "type": "Chai Teas"
+    },
+    {
+        "id": 21,
+        "sub_category": "Hot Teas",
+        "sub_category_id": 8,
+        "type": "Black Teas"
+    },
+    {
+        "id": 22,
+        "sub_category": "Hot Teas",
+        "sub_category_id": 8,
+        "type": "Green Teas"
+    },
+    {
+        "id": 23,
+        "sub_category": "Hot Teas",
+        "sub_category_id": 8,
+        "type": "Herbal Teas"
+    },
+    {
+        "id": 24,
+        "sub_category": "Hot Drinks",
+        "sub_category_id": 13,
+        "type": "Hot Chocolates"
+    },
+    {
+        "id": 25,
+        "sub_category": "Hot Drinks",
+        "sub_category_id": 13,
+        "type": "Juice"
+    },
+    {
+        "id": 26,
+        "sub_category": "Hot Drinks",
+        "sub_category_id": 13,
+        "type": "Steamers"
+    },
+    {
+        "id": 27,
+        "sub_category": "Frappuccino® Blended Beverages",
+        "sub_category_id": 17,
+        "type": "Coffee Frappuccino®"
+    },
+    {
+        "id": 28,
+        "sub_category": "Frappuccino® Blended Beverages",
+        "sub_category_id": 17,
+        "type": "Creme Frappuccino®"
+    },
+    {
+        "id": 29,
+        "sub_category": "Iced Teas",
+        "sub_category_id": 2,
+        "type": "Bottled Teas"
+    },
+    {
+        "id": 30,
+        "sub_category": "Iced Teas",
+        "sub_category_id": 2,
+        "type": "Iced Black Teas"
+    },
+    {
+        "id": 31,
+        "sub_category": "Iced Teas",
+        "sub_category_id": 2,
+        "type": "Iced Chai Teas"
+    },
+    {
+        "id": 32,
+        "sub_category": "Iced Teas",
+        "sub_category_id": 2,
+        "type": "Iced Green Teas"
+    },
+    {
+        "id": 33,
+        "sub_category": "Iced Teas",
+        "sub_category_id": 2,
+        "type": "Iced Herbal Teas"
+    },
+    {
+        "id": 34,
+        "sub_category": "Cold Drinks",
+        "sub_category_id": 12,
+        "type": "Starbucks Refreshers™"
+    },
+    {
+        "id": 35,
+        "sub_category": "Cold Drinks",
+        "sub_category_id": 12,
+        "type": "Juice Bottle"
+    },
+    {
+        "id": 36,
+        "sub_category": "Cold Drinks",
+        "sub_category_id": 12,
+        "type": "Milk"
+    },
+    {
+        "id": 37,
+        "sub_category": "Cold Drinks",
+        "sub_category_id": 12,
+        "type": "Sparkling Water"
+    },
+    {
+        "id": 38,
+        "sub_category": "Cold Drinks",
+        "sub_category_id": 12,
+        "type": "Water"
+    },
+    {
+        "id": 39,
+        "sub_category": "Hot Breakfast",
+        "sub_category_id": 7,
+        "type": "Breakfast Sandwiches & Wraps"
+    },
+    {
+        "id": 40,
+        "sub_category": "Hot Breakfast",
+        "sub_category_id": 7,
+        "type": "Sous Vide Egg Bites"
+    },
+    {
+        "id": 41,
+        "sub_category": "Oatmeal & Yogurt",
+        "sub_category_id": 5,
+        "type": "Oatmeal & Yogurt"
+    },
+    {
+        "id": 42,
+        "sub_category": "Bakery",
+        "sub_category_id": 4,
+        "type": "Bagels"
+    },
+    {
+        "id": 43,
+        "sub_category": "Bakery",
+        "sub_category_id": 4,
+        "type": "Cake Pops"
+    },
+    {
+        "id": 44,
+        "sub_category": "Bakery",
+        "sub_category_id": 4,
+        "type": "Cookies, Brownies & Bars"
+    },
+    {
+        "id": 45,
+        "sub_category": "Bakery",
+        "sub_category_id": 4,
+        "type": "Croissants"
+    },
+    {
+        "id": 46,
+        "sub_category": "Bakery",
+        "sub_category_id": 4,
+        "type": "Loaves, Cakes & Buns"
+    },
+    {
+        "id": 47,
+        "sub_category": "Bakery",
+        "sub_category_id": 4,
+        "type": "Danishes & Doughnut"
+    },
+    {
+        "id": 48,
+        "sub_category": "Bakery",
+        "sub_category_id": 4,
+        "type": "Muffins & Scones"
+    },
+    {
+        "id": 49,
+        "sub_category": "Lunch",
+        "sub_category_id": 18,
+        "type": "Warm Sandwiches"
+    },
+    {
+        "id": 50,
+        "sub_category": "Lunch",
+        "sub_category_id": 18,
+        "type": "Protein Boxes"
+    },
+    {
+        "id": 51,
+        "sub_category": "Snacks & Sweets",
+        "sub_category_id": 3,
+        "type": "Biscotti & Cookies"
+    },
+    {
+        "id": 52,
+        "sub_category": "Snacks & Sweets",
+        "sub_category_id": 3,
+        "type": "Chocolates & Candy"
+    },
+    {
+        "id": 53,
+        "sub_category": "Snacks & Sweets",
+        "sub_category_id": 3,
+        "type": "Fruit & Nuts"
+    },
+    {
+        "id": 54,
+        "sub_category": "Snacks & Sweets",
+        "sub_category_id": 3,
+        "type": "Gum & Mints"
+    },
+    {
+        "id": 55,
+        "sub_category": "Snacks & Sweets",
+        "sub_category_id": 3,
+        "type": "Popcorn & Chips"
+    },
+    {
+        "id": 56,
+        "sub_category": "Snacks & Sweets",
+        "sub_category_id": 3,
+        "type": "Meat & Cheese"
+    },
+    {
+        "id": 57,
+        "sub_category": "Snacks & Sweets",
+        "sub_category_id": 3,
+        "type": "Snack Bars"
+    },
+    {
+        "id": 58,
+        "sub_category": "Snacks & Sweets",
+        "sub_category_id": 3,
+        "type": "Spreads"
+    },
+    {
+        "id": 59,
+        "sub_category": "Whole Bean",
+        "sub_category_id": 1,
+        "type": "Starbucks Reserve"
+    },
+    {
+        "id": 60,
+        "sub_category": "Whole Bean",
+        "sub_category_id": 1,
+        "type": "Blonde Roast"
+    },
+    {
+        "id": 61,
+        "sub_category": "Whole Bean",
+        "sub_category_id": 1,
+        "type": "Medium Roast"
+    },
+    {
+        "id": 62,
+        "sub_category": "Whole Bean",
+        "sub_category_id": 1,
+        "type": "Dark Roast"
+    },
+    {
+        "id": 63,
+        "sub_category": "VIA® Instant",
+        "sub_category_id": 11,
+        "type": "VIA Flavored"
+    },
+    {
+        "id": 64,
+        "sub_category": "VIA® Instant",
+        "sub_category_id": 11,
+        "type": "VIA Blonde Roast"
+    },
+    {
+        "id": 65,
+        "sub_category": "VIA® Instant",
+        "sub_category_id": 11,
+        "type": "VIA Medium Roast"
+    },
+    {
+        "id": 66,
+        "sub_category": "VIA® Instant",
+        "sub_category_id": 11,
+        "type": "VIA Dark Roast"
+    },
+    {
+        "id": 67,
+        "sub_category": "Cold Cups",
+        "sub_category_id": 19,
+        "type": "Cold Cups"
+    },
+    {
+        "id": 68,
+        "sub_category": "Tumblers",
+        "sub_category_id": 14,
+        "type": "Tumblers"
+    },
+    {
+        "id": 69,
+        "sub_category": "Mugs",
+        "sub_category_id": 9,
+        "type": "Mugs"
+    },
+    {
+        "id": 70,
+        "sub_category": "Other",
+        "sub_category_id": 10,
+        "type": "Other"
+    }
+]

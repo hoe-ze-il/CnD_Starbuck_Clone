@@ -1,0 +1,116 @@
+[
+  {
+    "categories": "At Home Coffee",
+    "id": 1,
+    "sub_category": "Whole Bean",
+    "image_path": "./images/menu/Whole Bean.jpg"
+  },
+  {
+    "categories": "Drinks",
+    "id": 2,
+    "sub_category": "Iced Teas",
+    "image_path": "./images/menu/Iced Teas.jpg"
+  },
+  {
+    "categories": "Food",
+    "id": 3,
+    "sub_category": "Snacks & Sweets",
+    "image_path": "./images/menu/Snacks & Sweets.jpg"
+  },
+  {
+    "categories": "Food",
+    "id": 4,
+    "sub_category": "Bakery",
+    "image_path": "./images/menu/Bakery.jpg"
+  },
+  {
+    "categories": "Food",
+    "id": 5,
+    "sub_category": "Oatmeal & Yogurt",
+    "image_path": "./images/menu/Oatmeal & Yogurt.jpg"
+  },
+  {
+    "categories": "Drinks",
+    "id": 6,
+    "sub_category": "Cold Coffees",
+    "image_path": "./images/menu/Cold Coffees.jpg"
+  },
+  {
+    "categories": "Food",
+    "id": 7,
+    "sub_category": "Hot Breakfast",
+    "image_path": "./images/menu/Hot Breakfast.jpg"
+  },
+  {
+    "categories": "Drinks",
+    "id": 8,
+    "sub_category": "Hot Teas",
+    "image_path": "./images/menu/Hot Teas.jpg"
+  },
+  {
+    "categories": "Merchandise",
+    "id": 9,
+    "sub_category": "Mugs",
+    "image_path": "./images/menu/Mugs.jpg"
+  },
+  {
+    "categories": "Merchandise",
+    "id": 10,
+    "sub_category": "Other",
+    "image_path": "./images/menu/Other.jpg"
+  },
+  {
+    "categories": "At Home Coffee",
+    "id": 11,
+    "sub_category": "VIA® Instant",
+    "image_path": "./images/menu/VIA® Instant.jpg"
+  },
+  {
+    "categories": "Drinks",
+    "id": 12,
+    "sub_category": "Cold Drinks",
+    "image_path": "./images/menu/Cold Drinks.jpg"
+  },
+  {
+    "categories": "Drinks",
+    "id": 13,
+    "sub_category": "Hot Drinks",
+    "image_path": "./images/menu/Hot Drinks.jpg"
+  },
+  {
+    "categories": "Merchandise",
+    "id": 14,
+    "sub_category": "Tumblers",
+    "image_path": "./images/menu/Tumblers.jpg"
+  },
+  {
+    "categories": "Drinks",
+    "id": 15,
+    "sub_category": "Oleato™",
+    "image_path": "./images/menu/Oleato™.jpg"
+  },
+  {
+    "categories": "Drinks",
+    "id": 16,
+    "sub_category": "Hot Coffees",
+    "image_path": "./images/menu/Hot Coffees.jpg"
+  },
+  {
+    "categories": "Drinks",
+    "id": 17,
+    "sub_category": "Frappuccino® Blended Beverages",
+    "image_path": "./images/menu/Frappuccino® Blended Beverages.jpg"
+  },
+  {
+    "categories": "Food",
+    "id": 18,
+    "sub_category": "Lunch",
+    "image_path": "./images/menu/Lunch.jpg"
+  },
+  {
+    "categories": "Merchandise",
+    "id": 19,
+    "sub_category": "Cold Cups",
+    "image_path": "./images/menu/Cold Cups.jpg"
+  }
+]
