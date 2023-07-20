@@ -1,0 +1,40 @@
+.button {
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 1px #000 solid;
+    border-radius: 1em;
+    padding: 7px 16px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.button-dark-outline {
+    border-color: #000;
+    color: #000;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+}
+
+.button-dark {
+    background-color: #000;
+    color: white;
+
+    &:hover {
+        background-color: #000000a2;
+    }
+}
+
+.button-green {
+    background-color: #00754a;
+    border: 1px solid #00754a;
+    color: #fff;
+
+    &:hover {
+        background-color: #00754abe;
+    }
+}

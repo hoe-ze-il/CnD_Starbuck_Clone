@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
+import "../Button/Button.scss"
 import next from "./icons/next.svg"
 import back from "./icons/back.png"
 

@@ -173,6 +173,7 @@ img {
 /* Mobile menu */
 .mobile-menu {
     position: fixed;
+    z-index: 100;
     top: 90;
     background-color: #ffffff;
     width: 80%;
@@ -248,6 +249,7 @@ img {
 
 .all-products {
     position: fixed;
+    z-index: 101;
     top: 90px;
     background-color: #ffffff;
     width: 80%;
