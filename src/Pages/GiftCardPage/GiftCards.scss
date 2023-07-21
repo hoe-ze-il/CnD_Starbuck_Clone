@@ -7,63 +7,92 @@
     display: flex;
     flex-wrap: nowrap;
     transition: transform 0.3s ease;
+    padding: 16px 64px 16px 131px;
+    .slide {
+        min-width: 20vw;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        .cards-img {
+            width: 90%;
+            flex: .9;
+            border-radius: .5rem;    
+        }
+        
+    }
 }
 
-.slide {
-    min-width: 25vw;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-}
-
-.cards-img {
-    width: 90%;
-    flex: .9;
-}
 
 
-.feature {
+
+
+
+.sections {
     position: relative;
+    h2 {
+        padding-left: 131px;
+    }
 }
 
-/* Style for the slide buttons */
-/*
-.buttons {
 
-    height: 5%;
-    width: 5%;
-    position: absolute;
-    top: 40%;
-    /* Adjust this value to place the buttons vertically within the slide */
-/*
-display: flex;
-justify-content: space-between;
-width: 100%;
-}
-
-*/
-
-/* Style for individual buttons */
 .prev-btn,
 .next-btn {
-    font-size: 12px;
-    height: 10%;
-    /* Your styles for buttons go here */
-    padding: 10px 15px;
+    position: absolute;
+    
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     cursor: pointer;
-}
+    border-radius: 50%;
 
-.next-btn {
-    /* Additional styles for the Next button if needed */
+    img {
+        padding: 6px 2px 4px;
+        width: 16px;
+        height: 16px;
+    }
 }
 
 .prev-btn {
-    /* Additional styles for the Previous button if needed */
+    top: 52%;
+    left: 10%;
 }
+.next-btn {
+    top: 52%;
+    right: 8%;
+}
+
 
 .hidden {
     display: none;
 }
+
+/*
+@media (max-width: 1024px) {
+    .slider {
+        .slide {
+            min-width: 25vw;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            transition: transform 0.5s;
+    
+            &:hover {
+                transform: translateY(-10px);
+            }
+    
+            .cards-img {
+                width: 90%;
+                flex: .9;
+                border-radius: .5rem;    
+            }
+        }
+    }
+}
+*/

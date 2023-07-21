@@ -109,13 +109,54 @@ const features = [
                 alt: "Feature cards 7"
             },
             {
-                image_path: "images/gift-cards-img/feature-img-8.jpg",
+                image_path: "images/gift-cards-img/feature-img-1.jpg",
                 alt: "Feature cards 7"
             },
             {
                 image_path: "images/gift-cards-img/feature-img-1.jpg",
                 alt: "Feature cards 7"
             },
+        ]
+    },
+    {
+        container: "feature3",
+        featureName: "Hello3",
+        images: [
+            {
+                image_path: "images/gift-cards-img/feature-img-1.jpg",
+                alt: "Feature cards 5"
+            },
+            {
+                image_path: "images/gift-cards-img/feature-img-2.jpg",
+                alt: "Feature cards 6"
+            },
+            {
+                image_path: "images/gift-cards-img/feature-img-7.jpg",
+                alt: "Feature cards 7"
+            },
+            {
+                image_path: "images/gift-cards-img/feature-img-12.jpg",
+                alt: "Feature cards 7"
+            },
+        ]
+    },
+    {
+        container: "feature4",
+        featureName: "Hello4",
+        images: [
+            {
+                image_path: "images/gift-cards-img/feature-img-1.jpg",
+                alt: "Feature cards 5"
+            },
+            {
+                image_path: "images/gift-cards-img/feature-img-2.jpg",
+                alt: "Feature cards 6"
+            },
+            {
+                image_path: "images/gift-cards-img/feature-img-7.jpg",
+                alt: "Feature cards 7"
+            },
+
         ]
     }
 
