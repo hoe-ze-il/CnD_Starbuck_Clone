@@ -1,7 +1,8 @@
 import Slide from "./Slide"
 import { useState, useEffect, useRef } from "react"
-import next from "./right-arrow.png"
-import back from "./left-arrow.png"
+import next from "./icons/right-arrow.png"
+import back from "./icons/left-arrow.png"
+import externalLink from "./icons/external-link-symbol.png"
 
 function Slides(props) {
     const sliderRef = useRef(null)
@@ -13,34 +14,75 @@ function Slides(props) {
     const [oddItems, setOddItems] = useState(0)
     const [totalWidth, setTotalWidth] = useState(0)
     const [visibleSlides, setVisibleSlides] = useState([])
+    const [slidesPerPage, setSlidesPerPage] = useState(4)
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth)
+        };
+        // Add event listener to track window resize
+        window.addEventListener('resize', handleResize);
+
+    }, []);
+
+    const handleWindowWidthChange = () => {
+        if (windowWidth <= 414) {
+            setSlidesPerPage(2)
+        }
+        else if (windowWidth > 414 && windowWidth <= 768) {
+            setSlidesPerPage(3)
+        }
+        else if (windowWidth >= 1024) {
+            setSlidesPerPage(4)
+        }
+    }
+
+    useEffect(() => {
+        // Call the function when the component mounts and on window width change
+        handleWindowWidthChange();
+    }, [windowWidth]);
 
     useEffect(() => {
         const slidesRef = props.images.length
-        setTotalWidth(slidesRef * 20)
-        setSlidePage(Math.ceil(slidesRef / 4))
-        setOddItems(slidesRef % 4)
+        if (slidesPerPage === 4) {
+            setTotalWidth(slidesRef * 20)
+        }
+        else if (slidesPerPage === 3) {
+            setTotalWidth(slidesRef * 30)
+        }
+        else if (slidesPerPage === 2) {
+            setTotalWidth(slidesRef * 45)
+        }
+        console.log(totalWidth)
+
+        setSlidePage(Math.ceil(slidesRef / slidesPerPage))
+        setOddItems(slidesRef % slidesPerPage)
         prevButRef.current.classList.add('hidden')
 
 
-        if (slidesRef <= 4) {
+        if (slidesRef <= slidesPerPage) {
             nextButRef.current.classList.add('hidden')
             for (const slide of sliderRef.current.childNodes)
                 slide.style.width = '20vw'
         }
-    }, [sliderRef, props.images.length])
+        else {
+            nextButRef.current.classList.remove('hidden')
+        }
+    }, [slidesPerPage, sliderRef, props.images.length])
 
     useEffect(() => {
         // Update the visible slides whenever the currentSlide changes
-        const endIndex = (currentSlide + 1) * 4;
-        const startIndex = endIndex - 4;
+        const endIndex = (currentSlide + 1) * slidesPerPage;
+        const startIndex = endIndex - slidesPerPage;
         setVisibleSlides(props.images.slice(startIndex, endIndex));
 
         if (currentSlide === 0) {
-            if (sliderRef.current.childNodes.length >= 5) {
-                sliderRef.current.childNodes[4].style.opacity = '0.2'
+            if (sliderRef.current.childNodes.length >= (slidesPerPage + 1)) {
+                sliderRef.current.childNodes[slidesPerPage].style.opacity = '0.2'
             }
         }
-    }, [currentSlide, props.images]);
+    }, [currentSlide, props.images, slidesPerPage]);
 
     // Function to slide to the next slide
     function slideNext() {
@@ -63,7 +105,6 @@ function Slides(props) {
         else if (currentSlide === slidePage) {
             return;
         }
-
     }
 
     // Function to slide to the previous slide
@@ -84,17 +125,16 @@ function Slides(props) {
         }
     }
 
-
     // Function to update the position of the slider based on the current slide index
     function updateSliderPosition(currentIndex) {
         // Calculate the index range of the visible slides
-        const endIndex = (currentIndex + 1) * 4;
-        const startIndex = endIndex - 4;
+        const endIndex = (currentIndex + 1) * slidesPerPage;
+        const startIndex = endIndex - slidesPerPage;
 
         // Calculate the index range of all slides
         const totalSlides = props.images.length;
-        const totalEndIndex = (totalSlides < 4 ? totalSlides : totalSlides - 4) + 4;
-        const totalStartIndex = totalEndIndex - 4;
+        const totalEndIndex = (totalSlides < slidesPerPage ? totalSlides : totalSlides - slidesPerPage) + slidesPerPage;
+        const totalStartIndex = totalEndIndex - slidesPerPage;
 
 
         // Apply transparency to the non-visible slides
@@ -106,7 +146,7 @@ function Slides(props) {
                 let slideRef = sliderRef.current.childNodes[totalSlides - i]
                 slideRef.style.opacity = "1"
             }
-            sliderRef.current.childNodes[totalSlides - 5].style.opacity = '0.2'
+            sliderRef.current.childNodes[totalSlides - (slidesPerPage + 1)].style.opacity = '0.2'
         }
         else {
             for (let i = 0; i < totalSlides; i++) {
@@ -127,30 +167,70 @@ function Slides(props) {
         }
 
         setVisibleSlides(newVisibleSlides);
+        let translateX;
+        if (slidesPerPage === 4) {
+            translateX = -currentIndex * 80;
+        }
+        else if (slidesPerPage === 3) {
+            translateX = -currentIndex * 90;
+        }
+        else if (slidesPerPage === 2) {
+            translateX = -currentIndex * 90;
+        }
 
-        const translateX = -currentIndex * 80;
         sliderRef.current.style.transform = `translateX(${translateX}vw)`;
     }
 
     function updateSliderPositionOdd(odd, currentIndex) {
-        const translateX = -currentIndex * 80 + ((4 - odd) * 20);
+        let translateX;
+        if (slidesPerPage === 4) {
+            translateX = -currentIndex * 80 + ((slidesPerPage - odd) * 20);
+        }
+        else if (slidesPerPage === 3) {
+            translateX = -currentIndex * 90 + ((slidesPerPage - odd) * 30);
+        }
+        else if (slidesPerPage === 2) {
+            translateX = -currentIndex * 90 + ((slidesPerPage - odd) * 45);
+        }
         sliderRef.current.style.transform = `translateX(${translateX}vw)`;
     }
 
     return (
-        <div className="sections">
-            <h2>{props.featureName}</h2>
-            <div className="slider-container">
-                <div className="cards-items slider" ref={sliderRef}>
-                    {props.images.map((item) => Slide(item))}
+        <>
+            <div className="sections">
+                <div className="header-container">
+                    <h2>{props.featureName}</h2>
+                    <span className={(props.images.length > slidesPerPage) ? "" : "hidden"}>See all</span>
                 </div>
 
+                <div className="slider-container">
+                    <div className="cards-items slider" ref={sliderRef}>
+                        {props.images.map((item) => Slide(item))}
+                    </div>
+
+                </div>
+                <div className="buttons">
+                    <button ref={prevButRef} onClick={slidePrev} className="prev-btn"><img src={back} alt="Back" /></button>
+                    <button ref={nextButRef} onClick={slideNext} className="next-btn"><img src={next} alt="Next" /></button>
+                </div>
             </div>
-            <div className="buttons">
-                <button ref={prevButRef} onClick={slidePrev} className="prev-btn"><img src={back} alt="Back" /></button>
-                <button ref={nextButRef} onClick={slideNext} className="next-btn"><img src={next} alt="Next" /></button>
-            </div>
-        </div>
+
+            {props.additionalContent ?
+                <div className="additional-content">
+                    <h2>Got a GiftCards</h2>
+                    <div>
+                        <p>Earns 2★ per $1</p>
+                        <button className="button button-dark-outline">Add or Reload</button>
+                        <button className="button button-dark">Check balance</button>
+                    </div>
+                    <div className="terms-conditions">
+                        <p>Card Terms & Conditions <img src={externalLink} alt="Link to:" /></p>
+                    </div>
+
+                </div>
+
+                : null}
+        </>
     )
 }
 
