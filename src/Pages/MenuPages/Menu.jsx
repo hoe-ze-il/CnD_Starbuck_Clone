@@ -4,6 +4,7 @@ import "./Menu.scss"
 import Sidebar from "./Sidebar";
 import NavigationBar from "../../Components/Navigation/NavigationBar"
 import { useState, useEffect } from "react"
+import MenuNavBar from "./MenuNavBar";
 
 
 function Menu() {
@@ -45,6 +46,7 @@ function Menu() {
     return (
         <>
             <NavigationBar handleNoScroll={handleNoScroll} />
+            <MenuNavBar />
             <main className="main_container">
                 <div className="sidebar-container">
                     <Sidebar />
