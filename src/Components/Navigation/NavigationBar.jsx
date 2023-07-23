@@ -156,7 +156,7 @@ function NavigationBar({ handleNoScroll }) {
                 </div>
             </nav>
             {/* Mobile menu */}
-            <div className={isNavOpen ? 'mobile-menu' : 'mobile-menu hidden'} id="menu">
+            <div className={isNavOpen ? 'mobile-menu' : 'mobile-menu nav-hidden'} id="menu">
                 <ul className="navbar-head">
                     <li>
                         <button onClick={handleMenuClick} >
@@ -202,7 +202,7 @@ function NavigationBar({ handleNoScroll }) {
                     </div>
                 </div>
             </div>
-            <div className={isMenuOpen ? "all-products" : "all-products hidden"}>
+            <div className={isMenuOpen ? "all-products" : "all-products nav-hidden"}>
                 <ul className="items-container">
                     <li>
                         <button onClick={returnToMenu}>
