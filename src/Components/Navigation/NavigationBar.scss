@@ -273,6 +273,7 @@ img {
                 border-radius: 1rem;
 
                 p {
+                    flex: .8;
                     justify-self: center;
                     font-size: 18px;
                     font-weight: 600;
@@ -281,7 +282,7 @@ img {
 
                 img {
                     margin-left: 32px;
-                    margin-right: 25%;
+                    margin-right: 32px;
                     width: 32px;
                     height: 32px;
                 }

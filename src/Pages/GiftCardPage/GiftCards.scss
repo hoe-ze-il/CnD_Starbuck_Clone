@@ -8,6 +8,7 @@
     flex-wrap: nowrap;
     transition: transform 0.3s ease;
     padding: 16px 64px 16px 131px;
+
     .slide {
         min-width: 20vw;
         padding: 0;
@@ -44,32 +45,35 @@
             color: #00754a;
         }
     }
+
+    &:first-child {
+        margin-top: 32px;
+    }
 }
 
 
 .prev-btn,
 .next-btn {
     position: absolute;
-    
+    padding: 8px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     cursor: pointer;
     border-radius: 50%;
 
     img {
-        padding: 6px 2px 4px;
         width: 16px;
         height: 16px;
     }
 }
 
 .prev-btn {
-    top: 54%;
-    left: 131px;
+    top: 45%;
+    left: 128px;
 }
 .next-btn {
-    top: 54%;
-    right: 64px;
+    top: 45%;
+    right: 128px;
 }
 
 .hidden {
@@ -119,6 +123,8 @@
     }
     .content-container {
         flex: .8;
+        display: flex;
+        flex-direction: column;
 
         p {
             font-weight: 400;
@@ -126,6 +132,7 @@
         }
         .button {
             margin-top: 16px;
+            width: 100px;
         }
     }
 }
@@ -139,7 +146,7 @@
     }
     .button {
         margin: 16px 16px 0;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .button:nth-child(3) {
@@ -154,12 +161,15 @@
         }
     }
     .prev-btn {
-        top: 54%;
+        top: 48%;
         left: 112px;
     }
     .next-btn {
-        top: 54%;
+        top: 48%;
         right: 50px;
+    }
+    .gift-cards-footer {
+        padding-left: 91px;
     }
 }
 
@@ -199,11 +209,11 @@
         }
     }
     .prev-btn {
-        top: 54%;
+        top: 46%;
         left: 8px;
     }
     .next-btn {
-        top: 54%;
+        top: 46%;
         right: 48px;
     }
     .additional-content {
@@ -227,15 +237,24 @@
     }
 
     .gifts-bulk {
-        padding-left: 32px;
         flex-direction: column;
-
+        padding: 32px 16px;
         .content-container {
-            width: 375px;
+            padding: 0 16;
         }
     }
     .gift-card-support {
         padding-left: 32px;
+        p {
+            width: 100%;
+        }
+        .button {
+            display: block;
+            margin: 16px 0 0;
+        }
+    }
+    .gift-cards-footer {
+        padding-left: 0px;
     }
 }
 
@@ -277,16 +296,15 @@
         }
     }
     .prev-btn {
-        top: 52%;
+        top: 46%;
         left: 8px;
     }
     .next-btn {
-        top: 52%;
+        top: 46%;
         right: 16px;
     }
 
     .gifts-bulk {
-        padding: 0;
         display: block;
         div {
             img {

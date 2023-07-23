@@ -1,10 +1,27 @@
 import "./GiftCards.scss"
 import { useState, useEffect, useRef } from "react"
 import Feature from "./Feature"
+import NavigationBar from "../../Components/Navigation/NavigationBar"
+import Footer from "../../Components/Footer/Footer"
 
 function GiftCards() {
+  const [noScroll, setNoScroll] = useState(false);
+
+    const handleNoScroll = (isNavOpen) => {
+        setNoScroll(isNavOpen);
+    };
+    console.log(noScroll)
+
+    useEffect(() => {
+        if (noScroll) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [noScroll]);
   return (
     <>
+    <NavigationBar handleNoScroll={handleNoScroll} />
       <Feature></Feature>
       <div className="gifts-bulk">
         <div>
@@ -25,6 +42,10 @@ function GiftCards() {
         <button className="button button-dark-outline">See Term & Conditions</button>
         <button className="button button-dark-outline">eGift FAQs</button>
       </div >
+      <footer className="gift-cards-footer">
+      <Footer />
+      </footer>
+      
     </>
   )
 }
