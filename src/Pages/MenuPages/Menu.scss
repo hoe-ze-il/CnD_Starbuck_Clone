@@ -59,6 +59,9 @@
     .menu {
         grid-column: 2 / -2;
     }
+    .menu-footer {
+        padding-left: 75px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -91,5 +94,8 @@
                 padding-left: 16px;
             }
         }
+    }
+    .menu-footer {
+        padding-left: 0px;
     }
 }

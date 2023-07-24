@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar";
 import MenuNavBar from "./MenuNavBar";
 import NavigationBar from "../../Components/Navigation/NavigationBar";
 import "./SubMenu.scss"
+import Footer from "../../Components/Footer/Footer";
 
 
 function SubMenu() {
@@ -78,6 +79,9 @@ function SubMenu() {
                 </div>
 
             </div>
+            <footer className="menu-footer">
+                <Footer />
+            </footer>
         </>
     )
 }

@@ -331,7 +331,7 @@ const features = [
 function Feature() {
     return (
         <>
-            <div className="feature">
+            <div className="gift-cards">
                 <>{features.map((item) => Slides(item))}</>
             </div>
 

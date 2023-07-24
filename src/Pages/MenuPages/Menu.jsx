@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 import NavigationBar from "../../Components/Navigation/NavigationBar"
 import { useState, useEffect } from "react"
 import MenuNavBar from "./MenuNavBar";
+import Footer from "../../Components/Footer/Footer";
 
 
 function Menu() {
@@ -92,6 +93,9 @@ function Menu() {
                 </section>
 
             </main>
+            <footer className="menu-footer">
+                <Footer />
+            </footer>
         </>
     )
 }

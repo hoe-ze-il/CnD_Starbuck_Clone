@@ -109,12 +109,12 @@ function NavigationBar({ handleNoScroll }) {
                             <Link to="/rewards">Rewards</Link>
                         </li>
                         <li>
-                            <a href="#">Gift Cards</a>
+                            <a href="/giftcards">Gift Cards</a>
                         </li>
                     </ul>
                     <ul className="navbar-nav-right">
                         <li>
-                            <a href="#">
+                            <a href="https://www.starbucks.com/store-locator?map=39.635307,-101.337891,5z">
                                 <svg
                                     fill="#000000"
                                     version="1.1"
@@ -169,14 +169,14 @@ function NavigationBar({ handleNoScroll }) {
                         <Link to="/rewards">Rewards</Link>
                     </li>
                     <li>
-                        <Link to="">Gift Cards</Link>
+                        <Link to="/giftcards">Gift Cards</Link>
                     </li>
                 </ul>
                 <div className="mobile-menu-bottom">
                     <botton className="button button-dark-outline">Sign In</botton>
                     <botton className="button button-dark">Join Now</botton>
                     <div>
-                        <a href="#">
+                        <a href="https://www.starbucks.com/store-locator?map=39.635307,-101.337891,5z">
                             <svg
                                 fill="#000000"
                                 version="1.1"

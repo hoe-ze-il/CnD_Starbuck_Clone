@@ -1,10 +1,10 @@
 import "./Rewards.scss";
-
 import { useState, useEffect } from "react";
 import FreeItems from './FreeItems';
 import EarnStars from './EarnStars';
 import LinkDelta from './bootstrap_components/LinkDelta';
 import NavigationBar from "../../Components/Navigation/NavigationBar";
+import Footer from "../../Components/Footer/Footer";
 
 function Rewards() {
     const [noScroll, setNoScroll] = useState(false);
@@ -150,7 +150,7 @@ function Rewards() {
                 <EarnStars />
                 <LinkDelta />
             </main>
-
+            <Footer />
         </>
     )
 }
