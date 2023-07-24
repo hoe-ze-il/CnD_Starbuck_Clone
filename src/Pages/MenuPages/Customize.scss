@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+select {
+  font-size: 1.1rem;
+  border: none;
+  width: 100%;
+}
+fieldset {
+  border-radius: 8px;
+  padding: 0.25rem;
+}
+
+.customize-navigation {
+    .navbar-brand {
+        a {
+            img {
+                content: url("http://localhost:3000/images/logo.svg")
+            }
+        }
+    }
+
+}
+
+.sub-menu-navigation {
+    p {
+        font-size: 14px;
+        padding: 8px 16px;
+        a {
+            color: #00000094;
+            margin-right: 6px;
+
+            &:last-child {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* This is the css for stlying the first Section That Display Picture and Title of the Product */
+.main-content {
+  width: 100vw;
+  background-color: #1f3933;
+  color: #fff;
+}
+.product-customize {
+  padding: 3.5em;
+}
+.product-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-content > div {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+}
+.product-picture {
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+
+.product-context {
+    flex: .5;
+  padding: 1em;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.product-context {
+    h1 {
+        padding: 2rem 0;
+    font-size: 2.25rem;
+    }
+    span {
+        font-size: 1.5rem;
+}
+  
+}
+
+.flex-add {
+    width: 24px;
+    margin-left: 8px;
+}
+.flex-sub {
+    margin-right: 8px;
+    width: 24px;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+/* This is the css for stlying the  Section That Display Size Optin 
+and additional Customize of the Product */
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 24px;
+    margin-bottom: 42px;
+    background-color: rgba(0, 128, 0, 0.329);
+    border: 3px solid green;
+    border-radius: 50%;
+    z-index: -100;
+    transition: margin-left .5s ;
+}
+
+
+
+.product-customize {
+  display: flex;
+  align-items: flex-start;
+}
+.product-customize > div {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.product-customize > div h2 {
+  border-bottom: 4px solid #2446365a;
+  padding-bottom: 1em;
+}
+.size-option {
+  padding: 0 2em;
+}
+.size-types {
+  display: flex;
+  align-items: center;
+  width: 384px
+}
+.size-types > * {
+  padding: 1.2em;
+  flex: 1;
+}
+/* Styling For 2 Section in Product customize */
+.info-option {
+  font-size: 1.1rem;
+}
+.info-option > div {
+  width: 25em;
+  margin: 1rem 0;
+  color: rgb(82, 82, 82);
+
+  
+}
+.flex-selection > fieldset {
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+}
+.btn-customize {
+  background-color: #1f3933;
+  color: #fff;
+  padding: 1em 1.5em;
+  font-size: 1.1em;
+  border-radius: 50px;
+}
+
+/* Styling for Nutrition Section */
+.nutrition-container {
+  padding: 1em;
+}
+.nutrition-container > * {
+  margin: 1em;
+}
+.btn-section {
+  padding-top: 2em;
+
+  .btn-customize {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin: 0;
+        svg {
+            margin-right: 8px;
+            width: 32px;
+            height: 32px;
+            fill: gold;
+        }
+        span {
+            font-weight: 600;
+        }
+    }
+}
+.btn-nutri {
+  padding: 0.8em;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 820px) {
+  .product-content,
+  .product-customize {
+    width: 100svw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-context {
+    align-items: center;
+  }
+  .product-customize > div {
+    padding: 1rem;
+    width: auto;
+  }
+
+  .info-option {
+    div {
+        flex: 1;
+        fieldset {
+            width: auto;
+        }
+    }
+  }
+
+  .flex-selection {
+    fieldset {
+        display: none;
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+  }
+}
+
+@media (max-width: 498px) {
+    .info-option {
+        div {
+            width: 300px;
+            fieldset {
+                width: auto;
+            }
+        }
+      }
+
+    
+}
+
