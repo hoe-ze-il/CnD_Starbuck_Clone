@@ -1,0 +1,326 @@
+.slider-container {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease;
+    padding: 16px 64px 16px 131px;
+
+    .slide {
+        min-width: 20vw;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        .cards-img {
+            width: 90%;
+            flex: .9;
+            border-radius: .5rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+    }
+}
+
+.sections {
+    position: relative;
+    .header-container {
+        padding: 0 64px 0 131px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 16px;
+        }
+        span {
+            color: #00754a;
+        }
+    }
+
+    &:first-child {
+        margin-top: 32px;
+    }
+}
+
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 50%;
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.prev-btn {
+    top: 45%;
+    left: 128px;
+}
+.next-btn {
+    top: 45%;
+    right: 128px;
+}
+
+.hidden {
+    display: none;
+}
+
+.additional-content {
+    background-color: #d4e9e2;
+    margin: 16px 0;
+    padding: 32px 16px 32px 131px;
+    h2 {
+        margin: 0 0 16px;
+    }
+
+    div {
+        display: flex;
+        p{
+            padding-right: 16px;
+        }
+
+        button:nth-child(3) {
+            margin-left: 16px;
+        }
+    }
+    .terms-conditions {
+        display: flex;
+        justify-content: flex-end;
+        
+        p {
+            margin: 8px 0;
+            img {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}
+
+.gifts-bulk {
+    display: flex;
+    padding: 56px 40px 56px 131px;
+    div {
+        img {
+            margin-right: 40px;
+            width: 375px;
+        }
+    }
+    .content-container {
+        flex: .8;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-weight: 400;
+            color: #00000086;
+        }
+        .button {
+            margin-top: 16px;
+            width: 100px;
+        }
+    }
+}
+
+.gift-card-support {
+    background-color: #edebe9;
+    font-size: 14px;
+    padding: 40px 40px 40px 131px;
+    p {
+        width: 50%;
+    }
+    .button {
+        margin: 16px 16px 0;
+        font-size: 14px;
+    }
+
+    .button:nth-child(3) {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sections {
+        .header-container {
+            font-size: 14px;
+        }
+    }
+    .prev-btn {
+        top: 48%;
+        left: 112px;
+    }
+    .next-btn {
+        top: 48%;
+        right: 50px;
+    }
+    .gift-cards-footer {
+        padding-left: 91px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sections {
+        .header-container {
+            font-size: 16px;
+            padding: 0 64px 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            h2 {
+                font-size: 1rem;
+                color: rgba(0, 0, 0, 0.671);
+            }
+        }
+    }
+    .slider {
+        padding-left: 16px;
+        .slide {
+            min-width: 30vw;
+            padding: 0;
+            box-sizing: border-box;
+            transition: transform 0.5s;
+    
+            &:hover {
+                transform: translateY(-10px);
+            }
+    
+            .cards-img {
+                width: 90%;
+                flex: .9;
+                border-radius: .5rem;    
+            }
+        }
+    }
+    .prev-btn {
+        top: 46%;
+        left: 8px;
+    }
+    .next-btn {
+        top: 46%;
+        right: 48px;
+    }
+    .additional-content {
+        padding: 32px 16px;
+        h2 {
+            font-size: 19px;
+        }
+        div {
+            display: block;
+
+            .button {
+                font-size: 14px;
+            }
+        }
+        .terms-conditions {
+            p {
+                font-size: 14px;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .gifts-bulk {
+        flex-direction: column;
+        padding: 32px 16px;
+        .content-container {
+            padding: 0 16;
+        }
+    }
+    .gift-card-support {
+        padding-left: 32px;
+        p {
+            width: 100%;
+        }
+        .button {
+            display: block;
+            margin: 16px 0 0;
+        }
+    }
+    .gift-cards-footer {
+        padding-left: 0px;
+    }
+}
+
+
+@media (max-width: 414px) {
+    .sections {
+        .header-container {
+            font-size: 14px;
+            padding: 0 64px 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            h2 {
+                font-size: 13px;
+                color: grey;
+            }
+        }
+    }
+    .slider {
+        padding-left: 16px;
+        .slide {
+            min-width: 45vw;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            transition: transform 0.5s;
+    
+            &:hover {
+                transform: translateY(-10px);
+            }
+    
+            .cards-img {
+                width: 94%;
+                flex: .9;
+                border-radius: .5rem;    
+            }
+        }
+    }
+    .prev-btn {
+        top: 46%;
+        left: 8px;
+    }
+    .next-btn {
+        top: 46%;
+        right: 16px;
+    }
+
+    .gifts-bulk {
+        display: block;
+        div {
+            img {
+                width: 100%;
+                margin: 0;
+            }
+        }
+        .content-container {
+            p {
+                width: 90%;
+                padding-right: 32px;
+            }
+            .button {
+                margin-left: 0;
+            }
+        }
+    }
+}
+

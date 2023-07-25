@@ -1,0 +1,156 @@
+.footer{
+  padding: 24px 40px;
+  font-size: 16px;
+
+  ul{
+    list-style: none;
+    padding: 0px;
+
+    li{
+      padding: 8px 0px;
+
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.first-part{
+  display: grid;
+  grid-template-columns: repeat(6, minmax(164px,1fr));
+  grid-template-rows: auto;
+  padding-bottom: 32px;
+
+  section{
+    margin-left: 32px;
+    h2{
+      padding-bottom: 32px;
+      font-size: 19px;
+    }
+    ul {
+      li {
+        a {
+          color: rgba(0, 0, 0, 0.457);
+        }
+        
+      }
+    }
+  }
+}
+
+  .second-part{
+    padding-top: 32px;
+  
+
+  .footer-privacy {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(164px,1fr));
+      grid-template-rows: auto;
+      
+      li {
+        width: 90%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+.second-part-logo{
+  display: flex;
+  a {
+    padding-right: 8px;
+  }
+}
+
+
+
+
+
+@media (max-width: 1024px){
+  .footer {
+    display: block;
+  }
+  .first-part{
+    grid-template-columns: repeat(1, 1fr);
+    section {
+      margin-left: 0;
+      h2 {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+
+.second-part {
+  margin-left: 0;
+  .footer-privacy {
+    ul { 
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+
+      li {
+        text-align: start;
+        padding-bottom: 12px;
+      }
+    }
+}
+}
+  
+  
+  .first-part section {
+    padding-left: 0;
+    ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+}
+  
+  .my-list{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+  }
+  
+  .my-list.expanded{
+    max-height: 200px;
+  }
+
+  .select {
+    position: relative;
+    display: flex;
+    flex-basis: 100px;
+    padding: 32px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    .my-list {
+        ul {
+        li {
+          padding: 16px;
+        }
+      }
+    }
+    
+  }
+  
+  .caret {
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transition: transform 0.5s;
+  }
+  
+  .caret.active {
+    transform: translateY(-50%) rotate(180deg);
+    transition: transform 0.5s;
+  }
+}
