@@ -33,7 +33,7 @@ function LinkDelta() {
                             <img src={star1}></img>
                         </div>
                         <div className='info col-md-6'>
-                            <div className='main-content'>
+                            <div className='main-content-delta'>
                                 <h2>Keep the Rewards Coming</h2>
                                 <p>The Rewards don't stop at your morning coffee. Join Starbucks® Rewards and unlock perks from our partners, all while earning more Stars.</p>
                             </div>
