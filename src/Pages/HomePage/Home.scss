@@ -1,0 +1,174 @@
+main {
+    box-shadow: 0 4px 2px -2px rgb(174, 170, 170);
+}
+
+.box {
+    display: flex;
+    margin: 32px 0;
+
+
+}
+
+#box1 {
+    background-color: #eb81a5;
+}
+
+#box2 {
+    background-color: #d4e9e2;
+
+    h1 {
+        font-size: 22px;
+        letter-spacing: 0;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .drinks {
+        background-color: #006340;
+    }
+}
+
+#box3 {
+    background-color: #8f8bf4;
+}
+
+#box4 {
+    background-color: #cbe678;
+
+    .drinks {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#box5 {
+    background-color: #e1fccd;
+
+    .drinks {
+        background-color: #009e75;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+}
+
+
+.drinks {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.content {
+    flex: 0.8;
+    padding: 32px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+        margin-bottom: 32px;
+    }
+
+    p {
+        margin-top: 32px;
+        font-size: 24px;
+
+    }
+
+    button {
+        display: block;
+        width: 8em;
+        align-self: center;
+        margin-top: 32px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.note {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+    text-align: center;
+    font-size: 14px;
+
+    p {
+        flex: 0.6;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .content-container {
+        .content {
+            flex: 1;
+            padding: 32px 16px;
+
+            h1 {
+                margin-top: 0;
+                font-size: 28px;
+                letter-spacing: 0;
+                margin-bottom: 0;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 22px;
+            }
+
+            button {
+                margin-top: 16px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .note {
+        margin: 0 16px;
+
+        p {
+            flex: 1;
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .content {
+        h1 {
+            font-size: 28px;
+        }
+    }
+}
