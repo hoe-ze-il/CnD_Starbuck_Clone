@@ -2,6 +2,8 @@
 
 This is an online platform for Starbucks in Canada, which provide specific information about their menu, products, promotions, store location, careers, and more.
 
+#### This clone website can be accessed here: [Starbucks Clone](https://kimsang-mok.github.io/Deploy_Starbucks/)
+
 ### Contributors
 
 1. Morido
