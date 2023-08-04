@@ -8,7 +8,7 @@ function MenuNavBar() {
                 <Link to="/menu">All products</Link>
                 <Link to="/">Featured</Link>
                 <Link to="/">Previous Orders</Link>
-                <Link to="/">Favorite Products</Link>
+                <Link to="/favorite_products">Favorite Products</Link>
             </div>
             <hr />
         </>

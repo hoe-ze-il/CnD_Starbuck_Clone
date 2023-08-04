@@ -1,0 +1,53 @@
+
+
+.favorite-main {
+    margin: 0 16px;
+}
+
+.favorite-products {
+    padding: 0 16px;
+    margin: 16px 16px;
+    font-weight: bold;
+}
+
+.img-container {
+    margin-top: 40px;
+    width: 200px;
+    height: 214px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.h2-text {
+    margin-top: 16px;
+
+}
+
+.p-text {
+    margin: 16px 0px;
+    color: rgba(0,0,0,.58);
+}
+
+.join-now {
+    margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .favorite-main {
+        margin: 0 16px 0 99px;
+    }
+
+    .favorite-products {
+        margin: 40px 0px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .favorite-main {
+        margin: 0 40px 0 131px;
+    }
+}
