@@ -29,19 +29,19 @@ This also covers recommended folder structure for the project. The folder struct
 
 ## HTML
 
-### 1**. Use meaningful tags**
+### 1. Use meaningful tags
 
-Each section of your web page should be built using the most appropriate for the content. It’s best to avoid excessive use of generic tags, such as <div> when there could be a more descriptive tag for the job such as <section>, <article>, and so on.
+Each section of your web page should be built using the most appropriate for the content. It’s best to avoid excessive use of generic tags, such as `<div>` when there could be a more descriptive tag for the job such as `<section>`, `<article>`, and so on.
 
-### 2**. Don’t use inline styles**
+### 2. Don’t use inline styles
 
 It may seem like an easy route to place styling in line with the code instead of creating an external style sheet. However, inline styles are not a good coding practice because it makes it harder to update and maintain a website. 
 
-### 3**. Use alt attribute with images**
+### 3. Use alt attribute with images
 
 It is not required to have an alt attribute with images, which makes it easy to ignore. However, it is important to have a meaningful alt attribute for validation and accessibility reasons. The alt attribute provides context to screen readers so it should be descriptive as to what the image contains.
 
-### 4. **Close Your Tags**
+### 4. Close Your Tags
 
 Closing all your tags is a W3C specification. To avoid encountering validation errors always remember to have a closing tag for every tag created.
 
