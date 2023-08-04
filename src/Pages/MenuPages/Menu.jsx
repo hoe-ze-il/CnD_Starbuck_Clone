@@ -46,7 +46,12 @@ function Menu() {
 
     return (
         <>
+        <div className="menu-page-navigation">
             <NavigationBar handleNoScroll={handleNoScroll} />
+        </div>
+            
+        
+            
             <MenuNavBar />
             <main className="main_container">
                 <div className="sidebar-container">

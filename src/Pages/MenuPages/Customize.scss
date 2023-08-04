@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 ul {
   list-style: none;
 }
@@ -18,6 +20,7 @@ fieldset {
 }
 
 .customize-navigation {
+  
   .navbar-brand {
     a {
       img {
@@ -25,6 +28,12 @@ fieldset {
       }
     }
   }
+  .navbar-nav-left {
+    li:first-child {
+        padding: 35px 0 30px;
+        border-bottom: 5px #006340 solid;
+    }
+}
 }
 
 .sub-menu-navigation {

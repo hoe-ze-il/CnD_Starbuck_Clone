@@ -21,7 +21,10 @@ function GiftCards() {
     }, [noScroll]);
   return (
     <>
-    <NavigationBar handleNoScroll={handleNoScroll} />
+    <nav className="gift-cards-navigation">
+      <NavigationBar handleNoScroll={handleNoScroll} />
+    </nav>
+    
       <Feature></Feature>
       <div className="gifts-bulk">
         <div>

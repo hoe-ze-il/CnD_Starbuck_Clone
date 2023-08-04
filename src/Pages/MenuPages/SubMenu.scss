@@ -23,7 +23,14 @@
 }
 
 
-
+.sub-menu-navigation {
+    .navbar-nav-left {
+        li:first-child {
+            padding: 35px 0 30px;
+            border-bottom: 5px #006340 solid;
+        }
+    }
+}
 
 .sidebar-container {
     margin-top: 24px;
