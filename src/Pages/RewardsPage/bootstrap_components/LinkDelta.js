@@ -22,12 +22,14 @@ function LinkDelta() {
     // Set the initial image source on component mount
     handleResize();
 
+
     // Add event listener for window resize
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
 
   return (
     <section>
