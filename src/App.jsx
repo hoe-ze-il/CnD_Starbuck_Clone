@@ -7,6 +7,7 @@ import Customize from './Pages/MenuPages/Customize';
 import Rewards from './Pages/RewardsPage/Rewards';
 import GiftCards from './Pages/GiftCardPage/GiftCards';
 import FavoriteProducts from './Pages/FavoriteProductsPage/FavoriteProducts';
+import PreviousOrder from './Pages/PreviousOrderPage/PreviousOrder';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Route path="/rewards" element={<Rewards />} />
       <Route path='/giftcards' element={<GiftCards />} />
       <Route path='/favorite_products' element={<FavoriteProducts /> } />
+      <Route path="/previous_order" element={<PreviousOrder />} />
     </Routes>
   );
 }
