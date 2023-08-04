@@ -57,7 +57,10 @@ function SubMenu() {
 
     return (
         <>
+        <nav className="sub-menu-navigation">
             <NavigationBar handleNoScroll={handleNoScroll} />
+        </nav>
+            
             <MenuNavBar />
             <div className="sub-menu-container">
                 <div className="sidebar-container">

@@ -1,8 +1,11 @@
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+
 
 ul {
   list-style: none;
@@ -18,13 +21,20 @@ fieldset {
 }
 
 .customize-navigation {
+  
   .navbar-brand {
     a {
       img {
-        content: url("http://localhost:3000/images/logo.svg");
+        content: url("https://logodownload.org/wp-content/uploads/2014/07/Starbucks-logo.png");
       }
     }
   }
+  .navbar-nav-left {
+    li:first-child {
+        padding: 35px 0 30px;
+        border-bottom: 5px #006340 solid;
+    }
+}
 }
 
 .sub-menu-navigation {

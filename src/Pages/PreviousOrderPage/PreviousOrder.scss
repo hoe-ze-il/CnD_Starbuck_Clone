@@ -1,0 +1,44 @@
+.previous-main {
+    margin: 0 16px;
+}
+
+.previous-order {
+    padding: 0 16px;
+    margin: 16px 16px;
+    font-weight: bold;
+}
+
+.gif {
+    margin-top: 40px;
+}
+
+.h2-text {
+    margin-top: 16px;
+
+}
+
+.p-text {
+    margin: 16px 0px;
+    color: rgba(0,0,0,.58);
+}
+
+.join-now {
+    margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .previous-main {
+        margin: 0 16px 0 99px;
+    }
+
+    .previous-order{
+        margin: 40px 0px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .previous-main {
+        margin: 0 40px 0 131px;
+    }
+}
