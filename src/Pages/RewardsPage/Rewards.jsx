@@ -24,8 +24,10 @@ function Rewards() {
 
     return (
         <>
-
-            <NavigationBar handleNoScroll={handleNoScroll} />
+            <nav className="rewards-page-navigation">
+                <NavigationBar handleNoScroll={handleNoScroll} />
+            </nav>
+            
             <main className='rewards'>
                 <header>
                     <div className="main-header">

@@ -17,6 +17,15 @@
     }
 }
 
+.menu-page-navigation {
+    .navbar-nav-left {
+        li:first-child {
+            padding: 35px 0 30px;
+            border-bottom: 5px #006340 solid;
+        }
+    }
+}
+
 .sidebar-container {
     grid-column: 2 / 3;
     grid-row: span 4;
