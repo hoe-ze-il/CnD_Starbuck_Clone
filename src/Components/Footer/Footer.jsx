@@ -40,7 +40,7 @@ function Footer() {
     <section>
       <div onClick={handleClick} className="select about">
         <h2 className="selected">About Us</h2>
-        <div className="caret" />
+        <div className={isAboutClick ? "caret active" : "caret"} />
       </div>
       <ul className={isAboutClick ? "my-list expanded" : "my-list"}>
         <li>
@@ -66,7 +66,7 @@ function Footer() {
     <section>
       <div onClick={handleClick} className="select career">
         <h2 className="selected">Careers</h2>
-        <div className="caret" />
+        <div className={isCareerClick ? "caret active" : "caret"} />
       </div>
       <ul className={isCareerClick ? "my-list expanded" : "my-list"}>
         <li>
@@ -92,7 +92,7 @@ function Footer() {
     <section>
       <div onClick={handleClick} className="select social">
         <h2 className="selected">Social Impact</h2>
-        <div className="caret" />
+        <div className={isSocialClick ? "caret active" : "caret"} />
       </div>
       <ul className={isSocialClick ? "my-list expanded" : "my-list"}>
         <li>
@@ -109,7 +109,7 @@ function Footer() {
     <section>
       <div onClick={handleClick} className="select business">
         <h2 className="selected">For Business Partners</h2>
-        <div className="caret" />
+        <div className={isBusinessClick ? "caret active" : "caret"} />
       </div>
       <ul className={isBusinessClick ? "my-list expanded" : "my-list"}>
         <li>
@@ -129,7 +129,7 @@ function Footer() {
     <section>
       <div onClick={handleClick} className="select order">
         <h2 className="selected">Order and Pick Up</h2>
-        <div className="caret" />
+        <div className={isOrderClick ? "caret active" : "caret"} />
       </div>
       <ul className={isOrderClick ? "my-list expanded" : "my-list"}>
         <li>
