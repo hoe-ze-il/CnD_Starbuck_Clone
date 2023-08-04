@@ -1,88 +1,88 @@
 .outer-box {
-    padding: 32px;
-    background-image: url('https://www.starbucks.com/app-assets/844262945b2a8b8cfb293156e2583872.png');
-    margin-bottom: 32px;
+  padding: 32px;
+  background-image: url("https://www.starbucks.com/app-assets/844262945b2a8b8cfb293156e2583872.png");
+  margin-bottom: 32px;
 }
 
 .content-inner {
-    background-color: #d4e9e2;
-    padding: 40px 0;
+  background-color: #d4e9e2;
+  padding: 40px 0;
 }
 
 .link-delta {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .info {
-    text-align: center;
+  text-align: center;
 
-    .main-content-delta {
-        h2 {
-            font-size: 28px;
-        }
+  
+  .main-content-delta {
+    h2 {
+      font-size: 28px;
+
     }
+  }
 
-    .sub-content {
-        img {
-            width: 195px;
-
-        }
+  .sub-content {
+    img {
+      width: 195px;
     }
+  }
 }
 
 @media (max-width: 768px) {
-    .outer-box {
-        padding: 0;
+  .outer-box {
+    padding: 0;
+  }
+
+  .content-inner {
+    padding: 8px 16px;
+  }
+
+  .link-delta {
+    margin: 0 16px;
+
+    p {
+      font-size: 14px;
     }
 
-    .content-inner {
-        padding: 8px 16px;
-    }
+    .info {
+      padding: 0 16px;
 
-    .link-delta {
-        margin: 0 16px;
+      .main-content-delta {
+        h2 {
+          padding: 16px 48px 0;
+          font-size: 24px;
+        }
+
 
         p {
-            font-size: 14px;
+          width: 90%;
+          margin: auto;
+          padding-top: 16px;
+
         }
+      }
 
-        .info {
-            padding: 0 16px;
+      .sub-content {
+        padding: 32px 20px 0;
 
-            .main-content-delta {
-                h2 {
-                    padding: 16px 48px 0;
-                    font-size: 24px;
-                }
-
-                p {
-                    width: 90%;
-                    margin: auto;
-                    padding-top: 16px;
-                }
-            }
-
-            .sub-content {
-                padding: 32px 20px 0;
-
-                button {
-                    margin: 24px 0 8px;
-                }
-            }
+        button {
+          margin: 24px 0 8px;
         }
-
-
-
+      }
     }
+  }
 
-    .star-image-1 {
-        display: flex;
-        justify-content: flex-start;
-    }
+  .star-image-1 {
+    display: flex;
+    justify-content: flex-start;
+  }
 
-    .star-image-2 {
-        display: flex;
-        justify-content: flex-end;
-    }
+  .star-image-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
