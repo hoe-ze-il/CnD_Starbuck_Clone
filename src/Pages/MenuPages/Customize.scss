@@ -18,29 +18,28 @@ fieldset {
 }
 
 .customize-navigation {
-    .navbar-brand {
-        a {
-            img {
-                content: url("http://localhost:3000/images/logo.svg")
-            }
-        }
+  .navbar-brand {
+    a {
+      img {
+        content: url("http://localhost:3000/images/logo.svg");
+      }
     }
-
+  }
 }
 
 .sub-menu-navigation {
-    p {
-        font-size: 14px;
-        padding: 8px 16px;
-        a {
-            color: #00000094;
-            margin-right: 6px;
+  p {
+    font-size: 14px;
+    padding: 8px 16px;
+    a {
+      color: #00000094;
+      margin-right: 6px;
 
-            &:last-child {
-                text-decoration: none;
-            }
-        }
+      &:last-child {
+        text-decoration: none;
+      }
     }
+  }
 }
 
 /* This is the css for stlying the first Section That Display Picture and Title of the Product */
@@ -68,58 +67,57 @@ fieldset {
   justify-content: center;
 }
 .product-picture {
-
   img {
     width: 300px;
     height: 300px;
   }
 }
 
-
-
 .product-context {
-    flex: .5;
+  flex: 0.5;
   padding: 1em;
   flex-direction: column;
   align-items: flex-start;
 }
 .product-context {
-    h1 {
-        padding: 2rem 0;
+  h1 {
+    padding: 2rem 0;
     font-size: 2.25rem;
-    }
-    span {
-        font-size: 1.5rem;
+  }
+  span {
+    font-size: 1.5rem;
+  }
 }
-  
+.btn-custom {
+  width: 30px;
+  height: 30px;
+  background-color: #1f3933;
+  border: 0;
+  clip-path: circle(50% at 50% 50%);
+  color: #fff;
 }
-
 .flex-add {
-    width: 24px;
-    margin-left: 8px;
+  margin-left: 8px;
 }
 .flex-sub {
-    margin-right: 8px;
-    width: 24px;
+  margin-right: 8px;
 }
 /* ---------------------------------------------------------------------------------------- */
 
 /* This is the css for stlying the  Section That Display Size Optin 
 and additional Customize of the Product */
 .circle {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: 24px;
-    margin-bottom: 42px;
-    background-color: rgba(0, 128, 0, 0.329);
-    border: 3px solid green;
-    border-radius: 50%;
-    z-index: -100;
-    transition: margin-left .5s ;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 24px;
+  margin-bottom: 42px;
+  background-color: rgba(0, 128, 0, 0.329);
+  border: 3px solid green;
+  border-radius: 50%;
+  z-index: -100;
+  transition: margin-left 0.5s;
 }
-
-
 
 .product-customize {
   display: flex;
@@ -140,7 +138,7 @@ and additional Customize of the Product */
 .size-types {
   display: flex;
   align-items: center;
-  width: 384px
+  width: 384px;
 }
 .size-types > * {
   padding: 1.2em;
@@ -154,8 +152,6 @@ and additional Customize of the Product */
   width: 25em;
   margin: 1rem 0;
   color: rgb(82, 82, 82);
-
-  
 }
 .flex-selection > fieldset {
   display: flex;
@@ -185,16 +181,16 @@ and additional Customize of the Product */
     align-items: center;
     width: 200px;
     margin: 0;
-        svg {
-            margin-right: 8px;
-            width: 32px;
-            height: 32px;
-            fill: gold;
-        }
-        span {
-            font-weight: 600;
-        }
+    svg {
+      margin-right: 8px;
+      width: 32px;
+      height: 32px;
+      fill: gold;
     }
+    span {
+      font-weight: 600;
+    }
+  }
 }
 .btn-nutri {
   padding: 0.8em;
@@ -224,34 +220,31 @@ and additional Customize of the Product */
 
   .info-option {
     div {
-        flex: 1;
-        fieldset {
-            width: auto;
-        }
+      flex: 1;
+      fieldset {
+        width: auto;
+      }
     }
   }
 
   .flex-selection {
     fieldset {
-        display: none;
-        div {
-            display: flex;
-            flex-direction: row;
-        }
+      display: none;
+      div {
+        display: flex;
+        flex-direction: row;
+      }
     }
   }
 }
 
 @media (max-width: 498px) {
-    .info-option {
-        div {
-            width: 300px;
-            fieldset {
-                width: auto;
-            }
-        }
+  .info-option {
+    div {
+      width: 300px;
+      fieldset {
+        width: auto;
       }
-
-    
+    }
+  }
 }
-
